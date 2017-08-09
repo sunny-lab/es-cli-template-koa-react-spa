@@ -1,3 +1,5 @@
-# es-cli-template-koa-react-spa
+# Get Started
 
-es-cli-template-koa-react-spa
+```
+npm install
+```
