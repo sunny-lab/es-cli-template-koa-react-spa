@@ -1,5 +1,0 @@
-# Get Started
-
-```
-npm install
-```

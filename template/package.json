@@ -2,7 +2,7 @@
     "name": "{{context.basic.name}}",
     "version": "0.1.0",
     "description": "{{context.basic.description}}",
-    {% if context.npm.private === true %}
+    {% if context.npm.private == true %}
     "private": true,
     {% endif %}
     "engines": {
@@ -15,7 +15,7 @@
         "test": ""
     },
     "author": "{{ context.basic.author }}",
-    {% if context.npm.private === true %}
+    {% if context.npm.private == true %}
     "license": "{{ context.npm.license }}",
     {% endif %}
     "devDependencies": {
