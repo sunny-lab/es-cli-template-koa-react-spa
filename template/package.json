@@ -1,20 +1,20 @@
 {
-    "name": "{{context.basic.name}}",
+    "name": "<%= context.basic.name %>",
     "version": "0.1.0",
     "description": "",
-    {% if context.npm.private == true %}
+    <% if(context.npm.private) { %>
     "private": true,
-    {% endif %}
+    <% } %>
     "engines": {
         "node": ">=4.0 <7",
         "npm": ">=3.3 <4"
     },
-    {% if context.git.hasRepo == true %}
+    <% if(context.git.hasRepo) { %>
     "repository": {
         "type": "git",
-        "url": "{{ context.git.gitRepo }}"
+        "url": "<%= context.git.gitRepo %>"
     },
-    {% endif %}
+    <% } %>
     "scripts": {
         "build": "babel src/srv -d build/srv",
         "dev-node": "nodemon src/srv/app.js --config ./nodemon-app.json",
@@ -22,10 +22,10 @@
         "prod": "node build-scripts/publish.js",
         "test": ""
     },
-    "author": "{{ context.basic.author }}",
-    {% if context.npm.private != true %}
-    "license": "{{ context.npm.license }}",
-    {% endif %}
+    "author": "<%= context.basic.author %>",
+    <% if(!context.npm.private){ %>
+    "license": "<%= context.npm.license %>",
+    <% } %>
     "devDependencies": {
         "autoprefixer": "^6.7.6",
         "babel-cli": "^6.24.1",
