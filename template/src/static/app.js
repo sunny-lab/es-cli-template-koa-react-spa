@@ -17,8 +17,9 @@ let routers = [HelloRouter];
 const initialState = window.__INITIAL_STATE__ || {};
 
 const core = {
-    path: '/hello',
+    path: '/',
     component: AppWrapper,
+    indexRoute: { onEnter: (nextState, replace) => replace('/hello') },
     childRoutes: routers
 };
 

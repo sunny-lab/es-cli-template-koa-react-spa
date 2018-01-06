@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import _ from 'lodash';
 import {bindActionCreators} from 'redux';
 
-import Hello from './components/Hello';
+import Hello from '../components/Hello';
 import * as helloAction from '../../../redux/actions/hello';
 
 class HelloApp extends React.Component {

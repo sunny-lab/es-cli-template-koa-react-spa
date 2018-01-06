@@ -1,4 +1,4 @@
-export default class DashboardController {
+export default class HelloController {
 
     async renderIndex(ctx, next) {
         await ctx.render(

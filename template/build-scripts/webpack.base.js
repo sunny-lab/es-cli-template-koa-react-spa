@@ -3,11 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack'),
     util = require('./util'),
     config = require('../config'),
-    path = require('path'),
-    HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
-
-const dllPath = path.join(__dirname, '../src/static/dll/dist/manifest.json'),
-    dllFileName = require(dllPath).name + '.js';
+    path = require('path');
 
 module.exports = {
     entry: config.build.entry,
