@@ -1,0 +1,19 @@
+{% extends './lib/parent.html' %}
+{% block head %}
+    <head>
+        {% include './lib/head.html' %}
+        <title>hello world</title>
+    </head>
+{% endblock %}
+{% block body %}
+    <body>
+    {% spaceless %}
+        <div id="mainApp">
+        </div>
+    {% endspaceless %}
+    <script>
+        window.__INITIAL_STATE__ ={{ serverState|raw|json_encode }};
+    </script>
+    </body>
+{% endblock %}
+
