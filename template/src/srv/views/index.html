@@ -11,6 +11,9 @@
         <div id="mainApp">
         </div>
     {% endspaceless %}
+    <script>
+        window.__INITIAL_STATE__ ={{ serverState|raw|json_encode }};
+    </script>
     </body>
 {% endblock %}
 
