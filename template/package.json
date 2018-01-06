@@ -73,7 +73,6 @@
         "babel-preset-env": "^1.6.1",
         "babel-register": "^6.26.0",
         "fetch-http-client": "^1.0.1",
-        "graceful-fs": "^4.1.4",
         "koa": "^2.4.1",
         "koa-compose": "^2.4.0",
         "koa-compress": "^1.0.9",

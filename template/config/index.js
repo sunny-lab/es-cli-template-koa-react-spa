@@ -15,11 +15,6 @@ const copyAssets = [
         context: path.join(__dirname, '../src')
     },
     {
-        from: './srv/views/error.html',
-        to: './',
-        context: path.join(__dirname, '../src')
-    },
-    {
         from: './srv/**/*.json',
         to: './',
         context: path.join(__dirname, '../src')

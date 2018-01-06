@@ -7,12 +7,15 @@
           "node": "6.6"
         }
       }
-    ]
+    ],
+    "react"
   ],
   "plugins": [
     "transform-object-rest-spread",
     "add-module-exports",
-    "transform-decorators-legacy"
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-export-extensions"
   ],
   "env": {
     "development": {
@@ -20,4 +23,3 @@
     }
   }
 }
-
